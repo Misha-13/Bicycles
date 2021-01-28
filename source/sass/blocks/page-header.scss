@@ -8,6 +8,14 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin-bottom: 150px;
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+    background-color: $layout-white;
+    margin-bottom: 70px;
+    min-height: auto;
+  }
 }
 
 .page-header__wrapper {
@@ -17,4 +25,11 @@
   flex-wrap: wrap;
   width: 874px;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
 }

@@ -10,6 +10,12 @@
   line-height: 28px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 18px;
+    color: $layout-black;
+  }
 }
 
 .common-form__fieldset {

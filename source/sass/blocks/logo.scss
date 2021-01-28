@@ -1,0 +1,9 @@
+.logo {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    left: 21px;
+    top: 25px;
+    width: 68px;
+    height: 20px;
+  }
+}
