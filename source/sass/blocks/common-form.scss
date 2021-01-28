@@ -1,0 +1,50 @@
+.common-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-form__info {
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.common-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+}
+
+.common-form__wrapper {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.common-form__input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $layout-black;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
+  border: 1px solid $layout-grey;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $layout-lighter-black;
+    font-weight: 400;
+  }
+}
+
+.common-form__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

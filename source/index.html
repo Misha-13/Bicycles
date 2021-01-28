@@ -6,41 +6,43 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Велосипеды</title>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="">О нас</a></li>
-        <li><a href="">Виды велосипедов</a></li>
-        <li><a href="">Видео про велосипеды</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-    </nav>
-    <section>
-      <img src="" alt="Логотип магазина Moon">
-      <h1>Мы продаем велосипеды</h1>
-      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-    </section>
-    <section>
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <fieldset>
-          <p>
-            <label class="visually-hidden" for="name">Имя</label>
-            <input id="name" type="text" placeholder="Введите Ваше Имя" required>
-          </p>
-          <p>
-            <label class="visually-hidden" for="phone">Телефон</label>
-            <input id="phone" type="tel" placeholder="Введите Ваш номер телефона" required>
-          </p>
-          <button type="submit">Подобрать велосипед мечты</button>
-        </fieldset>
-      </form>
-    </section>
+<body class="page__body">
+  <header id="header" class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-list__element"><a class="nav-list__link" href="#about">О нас</a></li>
+          <li class="nav-list__element"><a class="nav-list__link" href="#types">Виды велосипедов</a></li>
+          <li class="nav-list__element"><a class="nav-list__link" href="#video">Видео про велосипеды</a></li>
+          <li class="nav-list__element"><a class="nav-list__link" href="#about">Контакты</a></li>
+        </ul>
+      </nav>
+      <section class="main-info">
+        <img class="logo" src="img/logo.svg" alt="Логотип магазина Moon" width="68" height="20">
+        <h1 class="first-title main-info__title">Мы продаем велосипеды</h1>
+        <p class="main-info__info">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </section>
+      <section class="main-form">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form class="common-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="common-form__info">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <fieldset class="common-form__fieldset">
+            <p class="common-form__wrapper">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="common-form__input" id="name" type="text" placeholder="Введите Ваше Имя" required>
+            </p>
+            <p class="common-form__wrapper">
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input class="common-form__input" id="phone" type="tel" placeholder="Введите Ваш номер телефона" required>
+            </p>
+            <button class="common-form__button common-button" type="submit">Подобрать велосипед мечты</button>
+          </fieldset>
+        </form>
+      </section>
+    </div>
   </header>
   <main>
-    <section>
+    <section id="about">
       <h2>Несколько фактов о нас</h2>
       <ul>
         <li>Самый широкий выбор велосипедов!</li>
@@ -49,7 +51,7 @@
         <li>Профессиональные консультации!</li>
       </ul>
     </section>
-    <section>
+    <section id="types">
       <h2>Виды велосипедов</h2>
       <ul>
         <li>
@@ -66,13 +68,13 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <img src="" alt="Ролик про черный велосипед">
     </section>
   </main>
-  <footer>
+  <footer id="about">
     <h2>Как нас найти?</h2>
     <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     <img src="" alt="Изображение карты">
