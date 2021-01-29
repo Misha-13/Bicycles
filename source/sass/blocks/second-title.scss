@@ -1,0 +1,15 @@
+.second-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $special-black;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 18px;
+  }
+}
