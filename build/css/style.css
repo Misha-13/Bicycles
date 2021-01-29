@@ -863,4 +863,98 @@ img {
   background-image: url("../img/phone-icon.svg");
   background-repeat: no-repeat; }
 
+.page-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 137px;
+  padding-right: 137px;
+  padding-bottom: 131px; }
+  @media (max-width: 768px) {
+    .about-us {
+      padding-left: 106px;
+      padding-right: 106px;
+      padding-bottom: 70px; } }
+  @media (max-width: 320px) {
+    .about-us {
+      padding-left: 0;
+      padding-right: 0; } }
+
+.about-us__title {
+  margin-bottom: 50px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .about-us__title {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 41px;
+      letter-spacing: -0.005em; } }
+
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  counter-reset: item; }
+
+.about-list__element {
+  position: relative;
+  width: 263px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: #000000;
+  padding-top: 60px; }
+  .about-list__element::before {
+    counter-increment: item;
+    content: counter(item, decimal-leading-zero);
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #0ad9c6; }
+  @media (max-width: 768px) {
+    .about-list__element {
+      margin-bottom: 40px; }
+      .about-list__element:nth-last-of-type(-n+2) {
+        margin-bottom: 0; } }
+  @media (max-width: 320px) {
+    .about-list__element {
+      font-size: 22px;
+      letter-spacing: -0.5px; }
+      .about-list__element:nth-of-type(n) {
+        margin: 0;
+        margin-bottom: 35px; }
+      .about-list__element:last-of-type {
+        margin: 0; } }
+
 /*# sourceMappingURL=style.css.map */
