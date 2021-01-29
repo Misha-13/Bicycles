@@ -57,9 +57,9 @@
   &::before {
     content: "";
     position: absolute;
-    top: 23px;
-    right: 25px;
-    width: 22px;
+    top: 22px;
+    right: 12px;
+    width: 24px;
     height: 1px;
     transform: rotate(45deg);
     background-color: $layout-white;
@@ -72,9 +72,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 23px;
-    right: 25px;
-    width: 22px;
+    top: 22px;
+    right: 12px;
+    width: 24px;
     height: 1px;
     transform: rotate(-45deg);
     background-color: $layout-white;
