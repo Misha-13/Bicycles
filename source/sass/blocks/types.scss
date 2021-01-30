@@ -1,0 +1,28 @@
+.types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 137px;
+  padding-right: 137px;
+  padding-bottom: 147px;
+  padding-top: 149px;
+  background-color: $special-grey;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+  }
+}
+
+.types__title {
+  margin-bottom: 51px;
+  text-align: center;
+}
