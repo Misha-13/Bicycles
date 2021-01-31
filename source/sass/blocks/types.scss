@@ -4,7 +4,7 @@
   align-items: center;
   padding-left: 137px;
   padding-right: 137px;
-  padding-bottom: 147px;
+  padding-bottom: 152px;
   padding-top: 149px;
   background-color: $special-grey;
 
@@ -12,17 +12,26 @@
     padding-left: 75px;
     padding-right: 75px;
     padding-bottom: 70px;
-    padding-top: 50px;
+    padding-top: 54px;
   }
 
   @media (max-width: $mobile-width-only) {
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 }
 
 .types__title {
   margin-bottom: 51px;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+    margin-bottom: 37px;
+  }
 }

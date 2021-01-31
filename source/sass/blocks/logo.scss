@@ -6,4 +6,8 @@
     width: 68px;
     height: 20px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    left: 17px;
+  }
 }

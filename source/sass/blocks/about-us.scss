@@ -4,7 +4,7 @@
   align-items: center;
   padding-left: 137px;
   padding-right: 137px;
-  padding-bottom: 131px;
+  padding-bottom: 147px;
 
   @media (max-width: $tablet-width) {
     padding-left: 106px;
@@ -19,11 +19,11 @@
 }
 
 .about-us__title {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     font-size: 24px;
     line-height: 41px;
     letter-spacing: -0.005em;

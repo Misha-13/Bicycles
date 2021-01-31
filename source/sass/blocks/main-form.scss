@@ -1,7 +1,8 @@
 .main-form {
   width: 327px;
+  padding-top: 7px;
 
   @media (max-width: $mobile-width-only) {
-    width: 244px;
+    width: 288px;
   }
 }

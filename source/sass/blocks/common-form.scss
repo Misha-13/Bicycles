@@ -15,6 +15,11 @@
     font-weight: 600;
     font-size: 18px;
     color: $layout-black;
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
   }
 }
 
@@ -47,6 +52,13 @@
   &::placeholder {
     color: $layout-lighter-black;
     font-weight: 400;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 21px;
+    padding-right: 21px;
   }
 }
 
