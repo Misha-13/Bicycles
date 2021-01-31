@@ -32,14 +32,14 @@
           <fieldset class="common-form__fieldset">
             <p class="common-form__wrapper">
               <label class="visually-hidden" for="name">Имя</label>
-              <input class="common-form__input" id="name" type="text" placeholder="Введите Ваше Имя" required="">
+              <input class="common-form__input" id="name" name="name" type="text" placeholder="Введите Ваше Имя" required="">
             </p>
             <p class="common-form__wrapper">
               <label class="visually-hidden" for="phone">Телефон</label>
-              <input class="common-form__input" id="phone" type="tel" placeholder="Введите Ваш номер телефона" required="">
+              <input class="common-form__input" id="phone" name="phone" type="tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" required="">
             </p>
-            <button class="common-form__button common-button" type="submit">Подобрать велосипед мечты</button>
           </fieldset>
+          <button class="common-form__button common-button" type="submit">Подобрать велосипед мечты</button>
         </form>
       </section>
     </div>
