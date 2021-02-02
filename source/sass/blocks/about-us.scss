@@ -18,7 +18,12 @@
   }
 }
 
-.about-us__title {
+.about-us h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $special-black;
   margin-bottom: 45px;
   text-align: center;
 
@@ -27,5 +32,9 @@
     font-size: 24px;
     line-height: 41px;
     letter-spacing: -0.005em;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 18px;
   }
 }

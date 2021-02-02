@@ -18,17 +18,21 @@
   }
 }
 
-.video__title {
+.video h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
   color: $layout-white;
   margin-bottom: 20px;
   text-align: center;
 
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: $tablet-width) {
     font-size: 24px;
   }
 }
 
-.video__info {
+.video p {
   width: 340px;
   margin: 0;
   margin-bottom: 56px;
@@ -54,7 +58,7 @@
   position: relative;
 }
 
-.video__img {
+.video__wrapper img {
   width: 929px;
   height: 522px;
   object-fit: contain;

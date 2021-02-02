@@ -113,7 +113,7 @@
   }
 }
 
-.types-list__img {
+.types-list__element img {
   width: 342px;
   height: 513px;
   object-fit: cover;
@@ -127,7 +127,7 @@
   }
 }
 
-.types-list__img--big {
+.types-list__element--big img {
   height: 566px;
 
   @media (max-width: $tablet-width) {
@@ -136,7 +136,7 @@
   }
 }
 
-.types-list__info {
+.types-list p {
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;

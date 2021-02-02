@@ -14,6 +14,13 @@
     background-position: center center;
     background-size: cover;
     margin-bottom: 63px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+      background-image: url("../../img/header-bike@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
@@ -21,13 +28,19 @@
   }
 }
 
-.main-info__title {
+.main-info h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
   margin-top: 25px;
   margin-bottom: 22px;
   letter-spacing: -0.005em;
 
   @media (max-width: $tablet-width) {
     width: auto;
+    font-size: 30px;
+    line-height: 42px;
     text-align: center;
     margin-top: 55px;
     margin-bottom: 20px;
@@ -39,7 +52,7 @@
   }
 }
 
-.main-info__info {
+.main-info p {
   margin: 0;
   font-weight: 300;
   font-size: 20px;

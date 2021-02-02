@@ -4,11 +4,18 @@
   justify-content: center;
   color: $layout-white;
   background-color: $grey;
-  background-image: url("../../img/header-bike.jpg");
+  background-image: url("../../img/header-bike@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   margin-bottom: 150px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("../../img/header-bike@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 
   @media (max-width: $tablet-width) {
     background-image: none;

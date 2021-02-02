@@ -22,12 +22,18 @@
   }
 }
 
-.types__title {
+.types h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $special-black;
   margin-bottom: 51px;
   text-align: center;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 35px;
+    font-size: 24px;
   }
 
   @media (max-width: $mobile-width-only) {
