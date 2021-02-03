@@ -40,7 +40,7 @@
       background-image: url("../../img/rectangle.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      bottom: 5%;
+      bottom: 6%;
       right: -6%;
       z-index: 2;
 
@@ -111,6 +111,10 @@
   @media (max-width: $mobile-width-only) {
     margin-bottom: 40px;
   }
+}
+
+.types-list__element picture {
+  z-index: 1;
 }
 
 .types-list__element img {

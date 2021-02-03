@@ -79,9 +79,6 @@
   display: block;
   width: 65px;
   height: 65px;
-  background-image: url("../img/play-icon.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -94,5 +91,15 @@
   @media (max-width: $mobile-width-only) {
     width: 65px;
     height: 65px;
+  }
+}
+
+.video__svg {
+  width: 65px;
+  height: 65px;
+
+  @media (max-width: $tablet-width) {
+    width: 91px;
+    height: 91px;
   }
 }
