@@ -9,14 +9,14 @@
     min-height: 340px;
     width: 100%;
     background-color: $grey;
-    background-image: url("../../img/header-bike.jpg");
+    background-image: url("../img/header-bike@1x.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     margin-bottom: 63px;
 
     @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
-      background-image: url("../../img/header-bike@2x.jpg");
+      background-image: url("../img/header-bike@2x.jpg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -60,13 +60,13 @@
   opacity: 0.8;
 
   @media (max-width: $tablet-width) {
-    width: 435px;
+    max-width: 435px;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 288px;
+    max-width: 288px;
   }
 }

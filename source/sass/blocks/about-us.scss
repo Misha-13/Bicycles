@@ -7,8 +7,10 @@
   padding-bottom: 147px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 106px;
-    padding-right: 106px;
+    /* padding-left: 106px;
+    padding-right: 106px; */
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 70px;
   }
 

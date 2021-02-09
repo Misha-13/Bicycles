@@ -5,6 +5,14 @@
   justify-content: space-around;
   flex-wrap: wrap;
   counter-reset: item;
+
+  @media (max-width: $tablet-width) {
+    max-width: 556px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 263px;
+  }
 }
 
 .about-list__element {

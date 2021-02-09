@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 
   &:nth-of-type(3n+2) {
     padding-top: 39px;
@@ -20,7 +23,7 @@
       position: absolute;
       width: 47px;
       height: 47px;
-      background-image: url("../../img/rectangle.svg");
+      background-image: url("../img/rectangle.svg");
       background-repeat: no-repeat;
       background-size: contain;
       top: 3%;
@@ -37,7 +40,7 @@
       position: absolute;
       width: 47px;
       height: 47px;
-      background-image: url("../../img/rectangle.svg");
+      background-image: url("../img/rectangle.svg");
       background-repeat: no-repeat;
       background-size: contain;
       bottom: 6%;
@@ -102,6 +105,8 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
 
     &:last-of-type {
       margin-bottom: 0;
