@@ -2,8 +2,11 @@
   @include clear-lists-style;
   width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    justify-content: space-around;
+  }
 }
 
 .types-list__element {
@@ -12,8 +15,8 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
 
   &:nth-of-type(3n+2) {
     padding-top: 39px;
@@ -43,7 +46,7 @@
       background-image: url("../img/rectangle.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      bottom: 6%;
+      bottom: 5%;
       right: -6%;
       z-index: 2;
 
@@ -96,6 +99,8 @@
     @media (max-width: $tablet-width) {
       width: 68px;
       height: 68px;
+      top: -6%;
+      right: -9%;
     }
 
     @media (max-width: $mobile-width-only) {
@@ -114,7 +119,9 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -126,7 +133,7 @@
   width: 342px;
   height: 513px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   border-radius: 10px;
   z-index: 1;
 

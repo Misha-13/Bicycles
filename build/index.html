@@ -54,7 +54,7 @@
   <header id="header" class="page-header">
     <div class="page-header__wrapper">
       <nav class="navigation">
-        <ul class="nav-list">
+        <ul class="nav-list nav-list--no-js">
           <li class="nav-list__element">
             <a class="nav-list__link" href="#about">О нас</a>
             <svg class="nav-list__svg" width="7" height="12">
@@ -80,14 +80,14 @@
             </svg>
           </li>
         </ul>
-        <button class="navigation__toggle navigation__toggle--close" type="button">
+        <button class="navigation__toggle navigation__toggle--close navigation__toggle--hide" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
       </nav>
       <section class="main-info">
-        <div class="logo">
+        <a class="logo">
           <img src="img/logo.svg" alt="Логотип магазина Moon" width="68" height="20">
-        </div>
+        </a>
         <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </section>
@@ -177,18 +177,18 @@
         <img src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" alt="Изображение карты" width="957" height="530">
       </picture>
       <div class="page-footer__contacts">
-        <div class="page-footer__link-wrapper">
+        <a class="page-footer__link-wrapper page-footer__link page-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">
           <svg class="page-footer__svg page-footer__svg--mail" width="26" height="20">
             <use xlink:href="#icon-mail"></use>
           </svg>
-          <a class="page-footer__link page-footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        </div>
-        <div class="page-footer__link-wrapper">
+          <p>puteshestviemechta@gmail.ru</p>
+        </a>
+        <a class="page-footer__link page-footer__link--tel" href="tel:+749978468446">
           <svg class="page-footer__svg page-footer__svg--phone" width="22" height="23">
             <use xlink:href="#icon-phone"></use>
           </svg>
-          <a class="page-footer__link page-footer__link--tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
-        </div>
+          <p>+7 (499) -784-684-46</p>
+        </a>
       </div>
     </div>
   </footer>

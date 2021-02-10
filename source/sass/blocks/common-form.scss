@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.common-form__wrapper {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .common-form p {
   text-align: center;
   font-weight: 600;
@@ -15,7 +20,7 @@
     font-weight: 600;
     font-size: 18px;
     color: $layout-black;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -28,11 +33,6 @@
   flex-direction: column;
   border: none;
   padding: 0;
-}
-
-.common-form__wrapper {
-  margin: 0;
-  margin-bottom: 20px;
 }
 
 .common-form__wrapper input {

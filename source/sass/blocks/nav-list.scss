@@ -6,6 +6,26 @@
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav-list--open {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background-color: $layout-white;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-top: 50px;
+    width: 100%;
+  }
+}
+
+.nav-list--no-js {
+  @media (max-width: $tablet-width) {
+    display: flex;
     flex-direction: column;
     padding-top: 50px;
     background-color: $lighter-grey;
@@ -20,6 +40,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
 
   @media (max-width: $tablet-width) {
     position: relative;
@@ -27,6 +49,8 @@
     padding-bottom: 17px;
     padding-left: 16px;
     padding-right: 16px;
+    background-color: $lighter-grey;
+    margin: 0;
   }
 }
 
