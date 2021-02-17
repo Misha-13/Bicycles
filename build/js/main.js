@@ -47,9 +47,6 @@
       } else {
         setNavToggleOpen();
         navigationPane.classList.add('nav-list--close');
-        /* navigationPane.classList.remove('nav-list--open');
-        body.classList.remove('page-body--hiden');
-        navigationBlock.classList.remove('navigation--open'); */
         hideMobileNav();
       }
     });
@@ -60,9 +57,6 @@
         if (navigationPane.classList.contains('nav-list--close')) {
           navigationPane.classList.remove('nav-list--close');
         } else {
-          /* navigationPane.classList.remove('nav-list--open');
-          body.classList.remove('page-body--hiden');
-          navigationBlock.classList.remove('navigation--open'); */
           hideMobileNav();
         }
       }
@@ -71,9 +65,6 @@
     for (var i = 0; i < navigationLink.length; i++) {
       navigationLink[i].addEventListener('click', function () {
         setNavToggleOpen();
-        /* navigationPane.classList.remove('nav-list--open');
-        body.classList.remove('page-body--hiden');
-        navigationBlock.classList.remove('navigation--open'); */
         hideMobileNav();
       });
     }

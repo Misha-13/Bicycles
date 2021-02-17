@@ -662,13 +662,13 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #ffffff;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 100px;
     width: 100%; } }
 
 @media (max-width: 768px) {
@@ -706,7 +706,8 @@ img {
       padding-left: 16px;
       padding-right: 16px;
       background-color: #f6f6f6;
-      margin: 0; } }
+      margin: 0;
+      margin-bottom: 30px; } }
 
 .nav-list__link {
   width: 100%;
@@ -903,7 +904,7 @@ img {
   @media (max-width: 320px) {
     .page-footer img {
       height: 250px;
-      margin-bottom: 22px; } }
+      margin-bottom: 20px; } }
 
 .page-footer__contacts {
   width: 100%;
@@ -917,15 +918,15 @@ img {
           justify-content: center; }
   @media (max-width: 768px) {
     .page-footer__contacts {
-      max-width: 558px;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
+      max-width: 610px; } }
   @media (max-width: 768px) {
     .page-footer__contacts {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+  @media (max-width: 320px) {
+    .page-footer__contacts {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .page-footer__link {
   position: relative;
@@ -949,15 +950,18 @@ img {
     left: 0; }
   @media (max-width: 768px) {
     .page-footer__link {
-      margin-right: 90px; }
+      margin-left: -10px;
+      margin-right: 10px; }
       .page-footer__link:nth-of-type(2n) {
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-left: 0; } }
   @media (max-width: 320px) {
     .page-footer__link {
       margin: 0;
-      margin-bottom: 22px; }
+      margin-bottom: 20px; }
       .page-footer__link:last-of-type {
-        margin: 0; } }
+        margin: 0;
+        margin-left: -10px; } }
 
 .page-footer__link p {
   width: auto;
@@ -1041,13 +1045,15 @@ img {
   counter-reset: item; }
   @media (max-width: 768px) {
     .about-list {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      max-width: 556px; } }
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      max-width: 600px;
+      margin-bottom: -36px; } }
   @media (max-width: 320px) {
     .about-list {
-      max-width: 263px; } }
+      max-width: 263px;
+      margin-bottom: 0; } }
 
 .about-list__element {
   position: relative;
@@ -1073,9 +1079,13 @@ img {
     color: #0ad9c6; }
   @media (max-width: 768px) {
     .about-list__element {
-      margin-bottom: 36px; }
-      .about-list__element:nth-last-of-type(-n+2) {
-        margin-bottom: 0; } }
+      margin-bottom: 36px;
+      /* &:nth-last-of-type(-n+2) {
+      margin-bottom: 0;
+    } */
+      /* &:last-of-type {
+      margin-bottom: 0;
+    } */ } }
   @media (max-width: 320px) {
     .about-list__element {
       font-size: 18px;
@@ -1139,12 +1149,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* flex-wrap: wrap; */ }
   @media (max-width: 768px) {
     .types-list {
       -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+          justify-content: space-around;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 .types-list__element {
   position: relative;
@@ -1160,7 +1174,8 @@ img {
           align-items: center;
   margin-bottom: 30px;
   margin-right: 25px;
-  margin-left: 25px; }
+  margin-left: 25px;
+  min-width: 240px; }
   .types-list__element:nth-of-type(3n+2) {
     padding-top: 39px; }
     .types-list__element:nth-of-type(3n+2)::before {

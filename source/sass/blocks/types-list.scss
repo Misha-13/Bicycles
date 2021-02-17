@@ -2,10 +2,12 @@
   @include clear-lists-style;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 
   @media (max-width: $tablet-width) {
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -17,6 +19,7 @@
   margin-bottom: 30px;
   margin-right: 25px;
   margin-left: 25px;
+  min-width: 240px;
 
   &:nth-of-type(3n+2) {
     padding-top: 39px;

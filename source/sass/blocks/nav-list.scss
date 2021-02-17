@@ -15,10 +15,10 @@
     display: flex;
     flex-direction: column;
     background-color: $layout-white;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 100px;
     width: 100%;
   }
 }
@@ -51,6 +51,7 @@
     padding-right: 16px;
     background-color: $lighter-grey;
     margin: 0;
+    margin-bottom: 30px;
   }
 }
 
